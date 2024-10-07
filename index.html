@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="css\style.css">
+<script src="functional.js"></script>
 <title>WEBPREK</title>
 </head>
 <body>
@@ -129,14 +130,25 @@
                         We promise not to spam you! </p>
                 </div>
                 <div>
-                    <input type="email" placeholder="Enter email adress">
-                    <button>Continue</button>
+                    <input type="email" id="emailField" placeholder="Enter email adress">
+                    <button onclick="emailCheck()">Continue</button>
                 </div>
 
             </div>
 
         </div>
    </div>
+   <script>
+        function emailCheck() {
+        let email = document.querySelector('#emailField').value;
+        if(email.includes)
+            {
+                if(!email.includes('@')) alert('Нет символа @')
+                else if(!email.includes('.')) alert('Нет символа .')
+                else(alert ('Проверка пройдена.'))
+            }
+        }
+    </script>
    <div class="wrapper foot">
         <div class="container footer">
             <div class="cent">
@@ -167,4 +179,5 @@
    <div class="end">
     <p>Copyright ® 2021 Lorem All rights Recerved</p>
 </div>
+
 </body>
