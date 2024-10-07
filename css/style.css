@@ -8,18 +8,19 @@
   
 }
 body {
-font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #fff;
+  background: #373736;
   
   
 }
 .wrapper, .features {
-    padding: 0 100px;
-    padding-bottom: 140px;
+    width: 100%;
     background-color: #373736;
+    
 }
 .foot {
     padding-bottom: 0;
@@ -38,7 +39,7 @@ img {
 }
 
 .container {
-    width: 100%;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -86,14 +87,21 @@ header nav ul li:not(.btn) a:hover {
     
 }
 
-header nav ul li.btn a , .email .block button {
+header nav ul li.btn a , .email .block button , .hero-about .info button ,.feedback form button {
     background-color: #ffa500;
     padding: 20px 40px;
     border-radius: 10px;
     transition:all 500ms ease ;
+    border: 0;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+
 }
 
-header nav ul li.btn a:hover, .email .block button:hover {
+header nav ul li.btn a:hover, .email .block button:hover ,.hero-about .info button:hover, .feedback form button:hover {
     background-color: #81580b ;
     
 }
@@ -296,32 +304,49 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .email {
     padding-bottom:120px ;
-    margin-left: 100px;
+    margin-left: 150px;
+    
 }
 .email h3{
     margin-top: 60px;
     font-size: 30px;
     margin-bottom: 30px;
+    margin-left: 200px;
+    
+}
+.email > p{
+    margin-left: 200px;
 }
 
 .email .block {
     background-color: #1C140F ;
-    margin-top: 30px;
+    margin: 40px 0 0 200px;
     border-radius: 10px;
-    padding: 40px 1%;
-    max-width: 84%;
+    padding: 40px 3%;
+    max-width: 98%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     
     
+    
+    
+    
+}
+
+.email .block .yoba{
+    max-width: 500px;
+    
+
 }
 .email .block h4 {
     font-size: 30px;
     margin-bottom: 10px;
+    
+
 }
 .email .block p {
     font-size: 17px;
+    
 }
 
 .email .block input {
@@ -401,6 +426,158 @@ header nav ul li.btn a:hover, .email .block button:hover {
     text-align: center;
     
 }
+.hero-about {
+    position: relative;
+}
+
+.hero-about .info {
+    width: 500px;
+    padding: 220px 0;
+    padding-left: 30px;
+    
+}
+.hero-about h1 {
+    margin-bottom: 30px;
+}
+.hero-about p {
+    margin-bottom:20px ;
+}
+
+.hero-about .info button {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    border: 0;
+}
+.hero-about img {
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+}
+.work {
+    padding: 80px 0;
+}
+.work h1{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px; 
+    padding: 50px 35px;
+    background: #1C140F;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+    opacity: 70%;
+}
+.work .blocks .block .badge.purple {
+    background: #B000DC;
+}
+.work .blocks .block .badge.brown {
+    background: #DC4200;
+}
+.work .blocks .block .badge.green {
+    background: #00DC8D;
+}
+
+.hero-contacts h1{
+    
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contacts p {
+    text-align: center;
+    
+}
+.hero-contacts img{
+    width: 70%;
+    margin: 70px 12%;
+}
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.feedback p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+    
+}
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+.feedback form .inline > div{
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4f4f4f;
+    font-size: 14px;
+}
+
+.feedback form input, .feedback form textarea {
+    background-color: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button{
+    background-color:#DC7000 ;
+    float: right;
+    cursor: pointer;
+
+}
+
+.feedback form button:hover {
+    background-color: red;
+}
+
+
+
 
 
 
