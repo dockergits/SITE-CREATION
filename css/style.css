@@ -367,7 +367,8 @@ header nav ul li.btn a:hover, .email .block button:hover {
 }
 
 .footer .cent {
-    justify-content: center;
+    justify-content: space-between;
+    text-align: left;
     float: left;
     flex-wrap: wrap;
     padding-left: 170px;
